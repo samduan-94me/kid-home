@@ -76,7 +76,7 @@ window.MY_STUFF = {
       shelf: "💻 Code",
       title: "This website!",
       note: "The code for the page you are looking at right now.",
-      url: "https://github.com/samduan-94me/home",
+      url: "https://github.com/samduan-94me/kid-home",
     },
     {
       shelf: "💬 Hang out",

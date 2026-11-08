@@ -71,6 +71,15 @@ In `style.css`, copy the whole `[data-theme="candy"] { … }` block, rename it (
 
 Once DNS works, tick **Enforce HTTPS**.
 
+## 👧🧒 Give each kid their own site (like `kida.94me.fyi`)
+
+1. **Copy this repo.** On GitHub, click **Use this template → Create a new repository** (or **Fork**). Name it after the kid, for example `kida`.
+2. **Add a `CNAME` file** at the root of the new repo. It holds one line: `kida.94me.fyi`
+3. **Turn on Pages** in the new repo: **Settings → Pages → Deploy from a branch → main → / (root)**.
+4. **Add a DNS record** for `94me.fyi` at the domain registrar: type `CNAME`, name `kida`, value `samduan-94me.github.io`.
+5. Once the certificate is ready, tick **Enforce HTTPS** in Pages settings.
+6. **List it on the hub:** add one line to `sites.js` in the [home](https://github.com/samduan-94me/home) repo.
+
 ## 🧪 Challenges for learners
 
 1. ⭐ Change the emoji, name and facts.
