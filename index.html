@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+  👋 Hi! This is an HTML file. HTML describes WHAT is on the page.
+     - style.css   decides how things LOOK (colors, sizes, fonts)
+     - my-stuff.js holds YOUR info and links (edit this one first!)
+     - app.js      turns your links into cards and video players
+
+  Every <tag> opens a box, and </tag> closes it.
+  Tip: press the 🔍 X-ray button on the page to see all the boxes!
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Corner of the Internet</title>
+  <meta name="description" content="My profile: videos, games, code and links.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Space+Mono&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Twinkly background layer (drawn with CSS only) -->
+  <div class="sky" aria-hidden="true"></div>
+
+  <!-- The toolbar in the corner: theme picker + X-ray -->
+  <nav class="toolbar" aria-label="Page tools">
+    <div class="themes" id="themes"></div>
+    <button id="xray" class="tool" title="See the HTML boxes">🔍 X-ray</button>
+  </nav>
+
+  <!-- ===== HEADER: who I am ===== -->
+  <header class="hero">
+    <div class="avatar" id="avatar">🙂</div>
+    <h1 id="name">Loading…</h1>
+    <p class="tagline" id="tagline"></p>
+    <ul class="facts" id="facts"></ul>
+    <div class="buttons" id="buttons"></div>
+  </header>
+
+  <!-- ===== MAIN: all my stuff ===== -->
+  <main>
+    <!-- Filter chips get added here by app.js -->
+    <div class="filters" id="filters" role="toolbar" aria-label="Filter by type"></div>
+
+    <!-- Shelves (groups of cards) get added here by app.js -->
+    <div id="shelves"></div>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ and plain HTML. <a href="https://github.com/samduan-94me/home">See how it works</a></p>
+  </footer>
+
+  <!-- Scripts go last so the page boxes above already exist -->
+  <script src="my-stuff.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
